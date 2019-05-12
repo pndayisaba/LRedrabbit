@@ -27,7 +27,7 @@ class ForumController extends Controller
     return view('forum/index', $forumOutput);
   }
 
-  public function create(): String
+  public function create(): Object
   {
     return view('forum/create');
   }
