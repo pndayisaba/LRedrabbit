@@ -22,11 +22,11 @@
     </div>
     <div><button type="submit" id="btn-forum-submit">Submit</button></div>
   </form>
-
-  <script type="text/javascript" src="/js/redrabbit-form.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:80/js/redrabbit-form.js"></script>
   <script type="text/javascript">
     var RRF = new RedRabbitForm({
-        errors: <?=(!empty($errors) ? json_encode($errors):'[{ }]')?>,
+        errors: <?=(!empty($errors) ? json_encode($errors):'[ ]')?>,
         data: <?=(!empty($inputData) ? json_encode($inputData) : 'new Object()')?>
     });
     RRF.showHideErrors();

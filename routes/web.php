@@ -15,9 +15,7 @@ Route::get('/', function () {
 });
 Route::resource('/forum', 'ForumController');
 Route::resource('/login', 'LoginController');
-Route::get('/signup', function() {
-  return view('signup');
-});
+Route::resource('/signup', 'SignupController');
 Route::get('/account', 'AccountController@index');
 
 
